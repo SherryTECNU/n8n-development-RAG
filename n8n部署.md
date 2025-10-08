@@ -3,7 +3,7 @@
 
 n8n 是一个开源的自动化工作流工具，用于连接不同的应用程序和服务，实现任务的自动化。“n8n”是“nodemation”的缩写，它采用节点式（node-based）的可视化界面，用户可以通过拖拽节点来设计复杂的工作流。相较于Dify和扣子，n8n 的优势在于其强大的通用工作流自动化能力，能深度集成数百种应用并支持自定义代码，适合构建复杂、跨系统的非 AI 主导的自动化流程。
 [n8n的开源地址](https://github.com/n8n-io/n8n?tab=readme-ov-file)
-![n8n 操作界面示意图](deployment_images/n8n-screenshot.png)
+![n8n 操作界面示意图](static/n8n-screenshot.png)
 ## n8n 官方安装和启动方式
 - 通过 npx n8n 快速启动（Node.js）：
 ```bash
@@ -37,7 +37,7 @@ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n
 5. 重启
 
 
-![Hyper-V](deployment_images/Hyper-V-yes.png)
+![Hyper-V](static/Hyper-V-yes.png)
 
 > 💡 Tip  
 > !!!fold!!! 如果没有 Hyper-V 详见这篇材料：https://zhuanlan.zhihu.com/p/586751199 可以查询一下电脑是否已经开启虚拟化
@@ -53,11 +53,11 @@ _基于 x64 架构的 Windows 系统，下载 _wsl.2.4.13.0.x64.msi _基于 ARM6
 ## 安装 docker @Mac
 > 💡 Tip  
 > 下载完成后直接安装即可~
-![docker_mac001](deployment_images/docker_mac001.png)
-![docker_mac002](deployment_images/docker_mac002.png)
-![docker_mac003](deployment_images/docker_mac003.png)
-![docker_mac004](deployment_images/docker_mac004.png)
-![docker_mac005](deployment_images/docker_mac005.png)
+![docker_mac001](static/docker_mac001.png)
+![docker_mac002](static/docker_mac002.png)
+![docker_mac003](static/docker_mac003.png)
+![docker_mac004](static/docker_mac004.png)
+![docker_mac005](static/docker_mac005.png)
 
 ## 安装 docker @Linux
 > 💡 Tip  
@@ -72,9 +72,9 @@ _基于 x64 架构的 Windows 系统，下载 _wsl.2.4.13.0.x64.msi _基于 ARM6
 Windows 电脑：直接在桌面、 双击 启动 docker 即可
 
 Mac 电脑：⌘+ 空格，搜索“docker”，打开使用
-![docker_start_mac001](deployment_images/docker_start_MAC001.png)
-![docker_start_mac002](deployment_images/docker_start_MAC002.png)
-![docker_start_mac003](deployment_images/docker_start_MAC003.png)
+![docker_start_mac001](static/docker_start_MAC001.png)
+![docker_start_mac002](static/docker_start_MAC002.png)
+![docker_start_mac003](static/docker_start_MAC003.png)
 
 ## Docker 换源
 > 复制这段代码：
@@ -87,7 +87,7 @@ Mac 电脑：⌘+ 空格，搜索“docker”，打开使用
 ]
 ```
 
-![Docker_Change_Resource](deployment_images/Docker_Change_Resource.png)
+![Docker_Change_Resource](static/Docker_Change_Resource.png)
 
 # 四、n8n本地docker部署
 
@@ -103,15 +103,15 @@ Mac 电脑：⌘+ 空格，搜索“docker”，打开使用
 >```
 命令运行正常就开始下载 docker 镜像（如下图)
 
-![n8n_install](deployment_images/n8n_install.png)
+![n8n_install](static/n8n_install.png)
 
 执行完成后通过docker ps检验n8n是否安装成功，如果显示下图类似容器，则安装成功
 
-![docker_ps](deployment_images/docker_ps.png)
+![docker_ps](static/docker_ps.png)
 
 也可以通过docker.desktop检查是否成功
 
-![docker_desktop_n8n](deployment_images/docker_desktop_n8n.png)
+![docker_desktop_n8n](static/docker_desktop_n8n.png)
 > 💡 Tip  
 > 执行启动和使用n8n命令进行安装时，可能有以下报错：
 > ```bash
@@ -134,4 +134,4 @@ Mac 电脑：⌘+ 空格，搜索“docker”，打开使用
 > 💡 Tip  
 > 打开 http://localhost:5678 即可看到 n8n 页面 恭喜你已经完成了 n8n 部署！（首次登陆n8n会需要填写一些问题并要求填写你的Email，最好别跳过并填写自己的真实Email，因为n8n会给一个license到你的邮箱，激活后可以获得更多功能，千万别错过呦~）
 
- ![n8n_login](deployment_images/n8n_login.png)
+ ![n8n_login](static/n8n_login.png)
