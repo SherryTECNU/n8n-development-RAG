@@ -89,6 +89,8 @@ Mac 电脑：⌘+ 空格，搜索“docker”，打开使用
 
 ![Docker_Change_Resource](static/Docker_Change_Resource.png)
 
+docker部署参考：https://github.com/datawhalechina/self-dify/tree/main
+
 # 四、n8n本地docker部署
 
 打开Powershell，执行以下命令：
